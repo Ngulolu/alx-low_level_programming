@@ -1,4 +1,4 @@
-#include <stdio.h>
+include <stdio.h>
 /**
  * main - prints all numbers of base 16.
 (*
@@ -8,17 +8,22 @@ int main(void)
 {
 	int i = '0';
 
-	while (i <= '9')
+	for (i = 0; digit1 < 9; digit1++)
 	{
-		putchar(i);
-		i++;
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		{
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 8 && digit2 == 9)
+				continue;
+			
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	i = 'a';
-	while (i <= 'f')
-	{
-		putchar(i);
-		i++;
-	}
+
 	putchar('\n');
+
 	return (0);
 }
