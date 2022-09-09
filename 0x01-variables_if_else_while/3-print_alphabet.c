@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 /**
  * main - Prints the alphabet in lowercase, then in uppercase.
 (*
@@ -6,18 +6,18 @@ include <stdio.h>
  */
 int main(void)
 {
-	char s = 'a';
-	char S = 'A';
+	char c = 'a';
+	char d = 'A';
 
-	while (s <= 'z')
+	while (c <= 'z')
 	{
-		putchar(s);
-		s++;
+		putchar(c);
+		c++;
 	}
-	while (S <= 'Z')
+	while (d <= 'Z')
 	{
 		putchar(d);
-		S++;
+		d++;
 	}
 	putchar('\n');
 	return (0);
