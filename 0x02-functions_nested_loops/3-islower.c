@@ -3,9 +3,9 @@
 #include <unistd.h>
 
 /**
- *_islower - checks for lowercase char
- *
- * Return : 1 if input(int i)is lowercase, 0, if otherwise
+ *_islower - checks for lowercase char.
+ *int i - a single letter input.
+ * Return: 1 if input(int i)is lowercase, 0, if otherwise.
  */
 
 int _islower(int i)
