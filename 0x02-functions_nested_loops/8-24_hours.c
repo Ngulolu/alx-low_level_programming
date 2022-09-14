@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 /**
- *jack_beuer - prints every min of the 24 hr day clock
+ *jack_bauer - prints every min of the 24 hr day clock
  *h = hour, m = minutes
  * /10 allows second digit to rotate
  *for loop breaks before passing 24:00
