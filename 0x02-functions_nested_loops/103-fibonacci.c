@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - prints the sum of uneven fibonnaci in the sequence not exceeding 4000000
+*main - prints the sum of even terms in a fibonnaci sequence.
 *
 *
 *Return: Always 0
