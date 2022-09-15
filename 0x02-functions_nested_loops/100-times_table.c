@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- *print_times_table - prints the times table of random input i, starting with 0.
- *@i:a random input i
+ *print_times_table - prints the times table of input i, starting with 0
+*@i:a random input i
  */
 
-void print_times_table(int n)
+void print_times_table(int i)
 {
 	int num, mult, prod;
 
-	if (n >= 0 && n <= 15)
+	if (i >= 0 && i <= 15)
 	{
-		for (num = 0; num <= n; num++)
+		for (num = 0; num <= i ; num++)
 		{
 			_putchar('0');
 
