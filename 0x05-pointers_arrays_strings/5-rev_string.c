@@ -1,31 +1,19 @@
-#include "main.h"
 /**
- * rev_string - reverses a string
- * @s:char
+ *rev_string - reverses a string
+ *@s:holi
  *
  */
+
 void rev_string(char *s)
 {
-	int i;
-	int j;
-	int temp;
-	int length;
+int i;
 
-	while (s[i] != 0)
-	{
-		i++;
-	}
-
-	length = i;
 	i = 0;
-	j = length - 1;
-
-	while (i < j)
+	while (s[i] != '\0')
 	{
-		temp = s[i];
-		s[i] = s[j];
-		s[j] = temp;
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] = s[i] - 32;
 		i++;
-		j--;
 	}
+	return (s);
 }
