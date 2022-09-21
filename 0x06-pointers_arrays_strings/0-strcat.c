@@ -1,17 +1,12 @@
 #include "main.h"
 
+/**
  * _strcat - concatenates two strings
-
  *
-
  * @dest: the string @src is added to
-
  * @src: the string to be appended
-
  *
-
  * Return: pointer to the resulting string @dest
-
  */
 
 
@@ -19,11 +14,11 @@
 
  {
 
-	 int len1; /* string length for src */
+int len1; /* string length for src */
 
 int len2; /* string length for dest */
 
-	 int i;
+int i;
 
 
 
