@@ -2,7 +2,6 @@
 
 /**
  * _strcat - concatenates two strings
- *
  * @dest: the string @src is added to
  * @src: the string to be appended
  *
@@ -20,34 +19,31 @@ int len2; /* string length for dest */
 
 int i;
 
+len1 = 0;
 
-
-	 len1 = 0;
-
-	 len2 = 0;
-
-
-
-	 while (src[len1] != '\0')
-
-		 len1++;
-
-
-	 while (dest[len2] != '\0')
-
-		 len2++;
+len2 = 0;
 
 
 
-	 for (i = 0; i <= len1; i++)
+while (src[len1] != '\0')
 
-	 {
+len1++;
 
-		 dest[len2] = src[i];
+
+while (dest[len2] != '\0')
 
 len2++;
 
-	 }
 
-	 return (dest);
+for (i = 0; i <= len1; i++)
+
+{
+
+dest[len2] = src[i];
+
+len2++;
+
+}
+
+return (dest);
 }
