@@ -6,10 +6,11 @@
  *@b : byte to fill with
  *@n : number of spaces to fill
  *
- *Return ; pointer to memory area s
+ *Return: pointer to memory area s
  */
 
 char *_memset(char *s, char b, unsigned int n)
+
 {
 	unsigned int i;
 
