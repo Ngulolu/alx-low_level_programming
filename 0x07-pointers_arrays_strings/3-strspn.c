@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *fate)
 	{
 		for (j = 0; fate[j]; j++)
 		{
-			if (s[i] == fate [j])
+			if (s[i] == fate[j])
 				break;
 		}
 		if (!fate[j])
