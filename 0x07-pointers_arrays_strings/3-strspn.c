@@ -3,23 +3,23 @@
 /**
  *_strspn - gets the length of a prefix substring
  *@s : string to check
- *@fate: string to check against
+ *@accept: string to check against
  *
  *Return: number of bytes of s in fate
  */
 
-unsigned int _strspn(char *s, char *fate)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
 
-	for (i = 0; fate[j]; j++)
+	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; fate[j]; j++)
+		for (j = 0; accept[j]; j++)
 		{
-			if (s[i] == fate[j])
+			if (s[i] == accept[j])
 				break;
 		}
-		if (!fate[j])
+		if (!accept[j])
 			break;
 	}
 	return (i);
