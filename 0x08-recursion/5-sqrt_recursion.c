@@ -10,27 +10,24 @@
  *Return: -1 or natural root of c
  */
 
-int root_check(g,n)
+int root_check(int g, int c)
 {
-	for (g=0; g == c; g++)
-		return(g);
-
-x	if (g * g > c)
+	if (g * g == c)
+		return (g);
+	if (g * g > c)
 		return (-1);
-
-	return root_check(g+1, c);
+	return (root_check(g + 1, c));
 }
 
 /**
- *_sqrt_recursion - returns the natural root of a number
- *@t: the integer to find the sqrt for
+ * _sqrt_recursion - returns the natural square root of a number
+ * @t: integer to find sqrt of
  *
- *Return: natural square root of -1
+ * Return: natural square root or -1
  */
-
-int _sqrt_recursion(t)
+int _sqrt_recursion(int t)
 {
 	if (t == 0)
 		return (0);
-	return (sqrt_check(1,t));
+	return (root_check(1, t));
 }
