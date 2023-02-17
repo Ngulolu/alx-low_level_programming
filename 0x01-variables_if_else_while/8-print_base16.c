@@ -1,29 +1,21 @@
-include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+
 /**
- * main - prints all numbers of base 16.
-(*
- * Return: 0 on success
+ * main - Program starts here
+ *
+ * Return: prints hexadecimal numbers in lowercase; 0 otherwise
  */
+
 int main(void)
+
 {
-	int i = '0';
+	int i;
 
-	for (i = 0; digit1 < 9; digit1++)
-	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
-		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit1 == 8 && digit2 == 9)
-				continue;
-			
-			putchar(',');
-			putchar(' ');
-		}
-	}
-
+	for (i = 48; i <= 57; i++)
+		putchar(i);
+	for (i = 97; i <= 102; i++)
+		putchar(i);
 	putchar('\n');
-
 	return (0);
 }
