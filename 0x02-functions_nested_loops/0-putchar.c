@@ -2,10 +2,12 @@
 #include "main.h"
 #include <unistd.h>
 #include <string.h>
+
 /**
  *main - entry point.
  *Return: 0 on sucses.
  */
+
 int main(void)
 {
 	char c[] = "_putchar";
