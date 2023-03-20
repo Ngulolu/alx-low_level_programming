@@ -23,7 +23,7 @@ array = (char *)malloc(size * sizeof(char));
 if (array != NULL)
 {
 for (i = 0; i < size; i++)
-array[i] = c;
+array[i] = t;
 }
 }
 return (array);
