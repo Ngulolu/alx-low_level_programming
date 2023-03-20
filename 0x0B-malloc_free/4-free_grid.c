@@ -6,7 +6,6 @@
  *free_grid - entry point
  *@grid - matrix being passed
  *@height - the variable to free the matrix
- *
  *Return: Nothing
  */
 
