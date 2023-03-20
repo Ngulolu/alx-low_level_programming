@@ -4,16 +4,20 @@
 
 /**
  *free_grid - entry point
- *@grid - matrix being passed
- *@height - the variable to free the matrix
+ *@grid - rows of the matrix
+ *@height - columns of the matrix
  *Return: Nothing
  */
 
 void free_grid(int **grid, int height)
 {
-int a;
-
-for (a = 0; a < height; a++)
-free(grid[a]);
+int i;
+int *p;
+ 
+for (i = 0; i < height; i++)
+{
+p = grid[i];
+free (p);   
+}
 free(grid);
 }
