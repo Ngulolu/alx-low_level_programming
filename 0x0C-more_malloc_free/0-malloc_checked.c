@@ -19,6 +19,7 @@ if (n == NULL)
 
 exit(98);
 
- return (n);
+return (n);
 
 }
+
