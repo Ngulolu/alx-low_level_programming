@@ -3,7 +3,7 @@
 
 /**
  * *malloc_checked - a function that allocates memory of any type
- * @s: unsigned int size of memory to be allocated 
+ * @s: unsigned int size of memory to be allocated
  *
  * Description: allocated memory using malloc
  * Return: pointer allocated to memory
