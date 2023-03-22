@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * string_nconcat - Concatenate two strings using n amount of s2
+ * 2nd + 1st = total len, malloc + null byte, loop to insert into temp arr
+ * @s1: input one
+ * @s2: input two
+ * @n: s2's number of bytes
+ * Return: 0
+ */
+
+char *string_noncat(char *s1, char *s2, unsigned int n)
+{
+char *arr;
+unsigned int j, k, c, c1;
+
+if (s1 == NULL)
+s1 = "";
+
+if (s2 == NULL)
+s2 = "";
+
+for (j = 0; s1[j] != '\0'; j++)
+{
+}
+
+for (k = 0; s2[k] != '\0'; k++)
+{
+}
+
+if (k < j)
+k = n;
+
+k += j;
+arr = malloc(sizeof(char *) * (k + 1));
+
+if (arr == NULL)
+return (NULL);
+
+for (c = 0; c < j; c++)
+arr[c] = s1[c];
+
+for (c1 = 0; c1 < k; c1++)
+{
+arr[c1] = s2[c1];
+c1++;
+}
+
+c1++;
+arr[c1] = '\0';
+return (arr);
+}
