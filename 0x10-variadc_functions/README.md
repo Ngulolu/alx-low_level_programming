@@ -1,1 +1,0 @@
-### VARIDC_functions ##
