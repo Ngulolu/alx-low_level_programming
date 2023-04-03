@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ *free_list - Free all malloced spaced of a list
+ *@head: pointer to the start of the list
+ *
+ */
+
+
 void free_list(list_t *head)
 {
   list_t *current_node = head;
