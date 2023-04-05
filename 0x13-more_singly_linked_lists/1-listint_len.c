@@ -3,7 +3,7 @@
 
 size_t listint_len(const listint_t *h)
 {
-  size_t l = 0;
+  unsigned int l = 0;
   const listint_t *current = h;
 
   for(; current != NULL; current = current->next)
