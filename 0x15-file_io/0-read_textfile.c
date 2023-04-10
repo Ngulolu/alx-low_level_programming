@@ -53,7 +53,7 @@ return (0);
 
 /*Write the file contents to the standard output */
 bytes_written = write(STDOUT_FILENO, my_buffer, bytes_read);
-if(bytes_written == -1 || bytes_written != bytes_read)
+if (bytes_written == -1 || bytes_written != bytes_read)
 {
 close(my_fd);
 free(my_buffer);
