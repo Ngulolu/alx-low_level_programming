@@ -11,18 +11,18 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-  unsigned long int flipped = n ^ m;
-  unsigned int len = 0;
-  unsigned int i = 0;
+unsigned long int flipped = n ^ m;
+unsigned int len = 0;
+unsigned int i = 0;
 
-  /* iterate over each bit in flipped */
+/* iterate over each bit in flipped */
 
-  for (; i < sizeof(unsigned long int) * 8; i++)
-    {
-      if (flipped & (1UL << i))
-	{
-	  len++;
-	}
-    }
-  return len;
+for (; i < sizeof(unsigned long int) * 8; i++)
+{
+if (flipped & (1UL << i))
+{
+len++;
+}
+}
+return (len);
 }
