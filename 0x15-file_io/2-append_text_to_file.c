@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 /**
- *append_text_to_file - appends text at the end of a file 
+ *append_text_to_file - appends text at the end of a file
  *@filename: name of the file to append to
  *@text_content: NULL terminated string to add at the end of the file
  *
@@ -42,6 +42,6 @@ return (-1);
 }
 }
 
-close (my_fd);
+close(my_fd);
 return (-1);
 }
