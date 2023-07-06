@@ -2,22 +2,26 @@
 #include <stdio.h>
 
 /**
- *get_endiannness - function that returns the value of the least significant byte
- *@num: variable of integer type 
- *@byte: the variable containing the address of variable num as an int
+ *get_endianness - function that returns the least significant byte value
  *
- *Return: 0
+ *Return: 0 if large endian, and 1 if least endian
  */
 
 
-int get_endiannes(void)
+int get_endianness(void)
 {
 unsigned int num = 1; /* Declare variable "num" type int with a value of 1 */
-char *byte = (char *)num; /* Create a char pointer and set the address of num */
+char *byte = (char *)&num;  /* Create a pointer and set the address of num */
 
 return ((int)*byte); /*Return the value of "byte"pointed to by byte */
 
 }
+
+/**
+ *main - entry point of the program
+ *
+ *Return: Always 0
+ */
 
 int main(void)
 {
