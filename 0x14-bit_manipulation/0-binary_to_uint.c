@@ -35,5 +35,3 @@ return (0); /* error; invalid character in string possibly */
 }
 return (n);
 }
-
-
