@@ -30,7 +30,7 @@ n = (n << 1) | 1; /* akin to multiplying by 2 and adding 1 */
 }
 else
 {
-return (0); /* error; invalid character in string possibly */
+return (0);
 }
 }
 return (n);
