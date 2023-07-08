@@ -5,7 +5,7 @@
  *@n:the value of the bit being returned at a given index
  *@index: the index to look its value for.
  *
- *Return : -1
+ *Return: -1
  */
 
 int get_bit(unsigned long int n, unsigned int index)
