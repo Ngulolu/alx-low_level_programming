@@ -9,6 +9,7 @@
  *append_text_to_file - a function that appends text to end of a file
  *@filename: the name to be appended text to
  *@text_content: the text content to appended to a file
+ *@strlen: a function that extracts the len of a str
  *
  *Return: 0
  */
