@@ -5,6 +5,7 @@
 
 
 /**
+ *cp - function that copies a file
  *@file_from: the path to the source file.
  *@file_to: the path to destination file
  *
@@ -64,5 +65,6 @@ status = cp(argv[1], argv[2]);
 if (status != 0)
 return (1);
 }
-return (status);
+
+ return (status);
 }
